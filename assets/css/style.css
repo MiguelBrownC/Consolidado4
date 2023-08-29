@@ -1,0 +1,76 @@
+body {
+    background-color: rgb(79, 68, 226);
+}
+
+.timeline-with {
+    margin: 20px;
+    position: relative;
+    border-left: 2px solid #d8dcd8;
+    list-style: none;
+    left: 10%;
+}
+
+.timeline-icon::before {
+    position: absolute;
+    left: -40px;
+    content: attr(data-range);
+    font-weight: bold;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: -45px;
+    background: rgb(238, 230, 5);
+    border-radius: 50%;
+    width: 21px;
+    height: 20px;
+}
+
+.card {
+    width: calc(33.33% - 20px);
+    margin-bottom: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.empty-card {
+    height: 100%;
+}
+
+.empty-card-inner {
+    height: 100%;
+    border: 1px dashed #aaa;
+    background-color: #f8f9fa;
+}
+
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.first-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: rgba(239, 41, 19, 0.994);
+}
+
+.second-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #52c322d8;
+}
+
+.third-circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: rgba(14, 14, 227, 0.855);
+}
